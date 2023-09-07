@@ -1,0 +1,59 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#header-container{
+     max-width: 100%;
+     background-color: rgb(10, 10, 10);
+     position: relative;
+     top: 0;
+}
+
+#about-me{
+     position: relative;
+     letter-spacing: 2px;
+     padding: 30px 60px;
+     color: rgb(255, 255, 255);
+     text-align: right;
+     font-weight: bolder;
+     font-size: 30px;
+     text-transform: uppercase;
+}
+
+#information-container{
+     margin-top: 30px;
+     padding: 20px 30px;
+     position: absolute;
+     background-color: rgb(255, 255, 255);
+     box-shadow: 2px 5px 15px 0 rgb(0, 0, 0);
+     border-radius: 10px;
+     left: 50%;
+     transform: translate(-50%, 0%);
+
+}
+
+div{
+     padding: 30px 40px;
+     margin-bottom: 30px;
+     width: 95%;
+     /* border-radius: 20px; */
+}
+
+div>label{
+     text-transform: uppercase;
+     font-weight: bolder;
+     font-size: 20px;
+}
+
+div>label~img{
+     max-width: 300px;
+}
+
+div>label~span{
+     /* text-transform: uppercase; */
+     font-size: 20px;
+     font-variant: small-caps;
+}

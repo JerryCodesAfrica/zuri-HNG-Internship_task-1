@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>About Me</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="fillInfo()">
+     <header id="header-container">
+          <h1 id="about-me">Personal Data Display</h1>
+     </header>
+
+     <section id="information-container">
+          <div id="information-content">
+               <label for="name">Name:</label>
+               <span id="name" data-testid="slackUserName">Jerry_xl</span>
+          </div>
+
+          <div class="display_pic">
+               <label for="pic">Display Picture:</label>
+               <img src="https://ca.slack-edge.com/T05FFAA91JP-U05RCT1A690-880335e784e5-512" data-testid="slackDisplayImage" alt="Jerry_xl" id="pic">
+          </div>
+
+          <div id="DODW">
+               <label for="week">Day of the week:</label>
+               <span id="week" data-testid="currentDayOfTheWeek"></span>
+          </div>
+
+          <div id="utc-time">
+               <label for="time">Current time(milli-seconds):</label>
+               <span id="time" data-testid="currentUTCTime"></span>
+          </div>
+
+          <footer>
+               <div id="github">
+                    <label for="mygithub">Github URL:</label>
+                    <a href="" id="mygithub" data-testid="githubURL"></a>
+               </div>
+          </footer>
+         
+     </section>
+     
+<script src="./script.js"></script>
+</body>
+</html>
