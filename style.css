@@ -36,7 +36,7 @@
 }
 
 div{
-     padding: 30px 40px;
+     padding:5px 50px;
      margin-bottom: 30px;
      width: 95%;
      /* border-radius: 20px; */
@@ -48,8 +48,13 @@ div>label{
      font-size: 20px;
 }
 
+.display_pic{
+  display:flex;
+  flex-direction: column;
+}
+
 div>label~img{
-     max-width: 300px;
+     max-width: 200px;
 }
 
 div>label~span{

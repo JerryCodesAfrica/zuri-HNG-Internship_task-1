@@ -1,22 +1,28 @@
 //geting the day of the week in words
 let date = new Date();
 let today = date.getDay();
-let hour = date.getUTCHours();
-let minute = date.getUTCMinutes();
-let seconds = date.getUTCSeconds();
-let milliseconds = date.getMilliseconds();
-
 let daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+let dayDisplay = document.querySelector('#week');
+dayDisplay.innerHTML = daysOfTheWeek[today];
 //rendering the days of the week to the DOM
-fillInfo =()=>{
-     let todayDay = daysOfTheWeek[today];
-     document.querySelector("#week").innerHTML = todayDay;
-     //time in milliseconds
+let showTime=()=>{
+  let date = new Date();
+  let hour = date.getUTCHours();
+  let minute = date.getUTCMinutes();
+  let seconds = date.getSeconds();
+  let timeDisplay = document.querySelector('#time');
+  let utctimeDisplay;
+  
+  
+  hour = hour<10?`0${hour}`: hour;
+  minute = minute<10?`0${minute}`: minute;
+  seconds = seconds<10?`0${seconds}`:seconds;
+  utctimeDisplay = `${hour}:${minute}:${seconds}`;
 
-     let currentTime = hour+":"+minute+":"+seconds+":"+milliseconds;
-     document.querySelector("#time").innerHTML = currentTime;
-}
+  timeDisplay.innerHTML=utctimeDisplay;
+  
+  
+  setTimeout(showTime,1000);
+};
 
-
-console.log(minute)
+showTime();
