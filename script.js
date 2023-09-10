@@ -7,24 +7,18 @@ dayDisplay.innerHTML = daysOfTheWeek[today];
 //rendering the UTC time to the DOM
 let showTime=()=>{
   let date = new Date();
-  let hour = date.getUTCHours();
-  let minute = date.getUTCMinutes();
-  let seconds = date.getSeconds();
-  let milliseconds = date.getMilliseconds();
+  let year = date.getFullYear();
+  let milliseconds = Date.now();
   let timeDisplay = document.querySelector('#time');
   let utctimeDisplay;
   
-  
-  hour = hour<10?`0${hour}`: hour;
-  minute = minute<10?`0${minute}`: minute;
-  seconds = seconds<10?`0${seconds}`:seconds;
   milliseconds = milliseconds<10?`0${milliseconds}`:milliseconds;
-  utctimeDisplay = `${hour}:${minute}:${seconds}:${milliseconds}`;
+  utctimeDisplay = milliseconds;
 
   timeDisplay.innerHTML=utctimeDisplay;
   
   
-  setTimeout(showTime,1000);
+  setTimeout(showTime,50);
 };
 
 showTime();
