@@ -7,6 +7,8 @@
 
 #header-container{
      max-width: 100%;
+     position: absolute;
+     overflow: auto;
      background-color: rgb(10, 10, 10);
      position: relative;
      top: 0;
@@ -26,6 +28,8 @@
 
 
 #information-container{
+  align-items: center;
+     width: 65%;
      margin-top: 30px;
      padding: 20px 30px;
      position: absolute;
@@ -37,11 +41,11 @@
 }
 
 div{
-     padding:5px 50px;
+     width: 100%;
      margin-bottom: 30px;
-     width: 95%;
      border-radius: 20px;
 }
+
 div>label{
   font-weight: bolder;
 }
@@ -52,7 +56,7 @@ div>label{
 }
 
 div>label~img{
-     max-width: 200px;
+     max-width: 150px;
 }
 
 div>label~span{
