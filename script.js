@@ -7,7 +7,6 @@ dayDisplay.innerHTML = daysOfTheWeek[today];
 //rendering the UTC time to the DOM
 let showTime=()=>{
   let date = new Date();
-  let year = date.getFullYear();
   let milliseconds = Date.now();
   let timeDisplay = document.querySelector('#time');
   let utctimeDisplay;
@@ -18,7 +17,7 @@ let showTime=()=>{
   timeDisplay.innerHTML=utctimeDisplay;
   
   
-  setTimeout(showTime,50);
+  setTimeout(showTime,100);
 };
 
 showTime();
